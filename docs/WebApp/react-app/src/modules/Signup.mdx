@@ -1,0 +1,43 @@
+---
+name: Signup
+menu: React-App
+---
+
+import { Props } from 'docz'
+import Signup from './Signup'
+
+# Signup.js
+
+## Properties
+>email - Signup email <br/>
+>password - Signup password <br/>
+>verifyPassword - Ensures password was inputted the same twice <br/>
+>code - confirmation code sent to email <br/>
+>submitted - the form submitted <br/>
+>newUser - has a new user been created <br/>
+
+## Method Descriptions
+
+validateForm()
+>Ensures signup is not empty
+
+validateConfirmationForm()
+>Ensures confirmation is not empty
+
+handleChange()
+> Updates fields as user inputs data
+
+handleSubmit()
+> Calls Auth to create a new user and triggers rerenders for confirmation
+
+handleConfirmation()
+>Calls Auth to confirm account creation, signs the user in,
+updates props accordingly, and redirects to dashboard
+
+renderForm()
+> returns the HTML/Bootstrap for the signup page
+
+renderConfirmationForm()
+>returns the HTML/Boostrap for the confirmation code page
+
+## Notes
